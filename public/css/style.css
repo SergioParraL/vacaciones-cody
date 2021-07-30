@@ -1,38 +1,204 @@
+/* Nav */
 nav{
-  background-color: aliceblue;
-  padding: 15px;
+  width: 100%;
+  height: 5rem;
+  padding: 1rem;
   display: flex;
   gap:1em;
+  background-color: rgb(86, 70, 166);
 }
 
-main{
+.cody-wrapper{
+  width: 12%;
+  height: 3.5em;
+}
+
+.cody-wrapper:first-child{
+  background: url('../images/cody.png') no-repeat;
+  background-position: center;
+  background-size: 3em;
+}
+
+.cody-wrapper:last-child{
+  background: url('../images/ellipsis-horizontal-circle-outline.svg') no-repeat;
+  background-position: center;
+  background-size: 2em;
+}
+
+.div-link {
+  display: none;
+  list-style-type: none;
+  padding-top: .5em;
+  background-color: rgb(1, 155, 217);
+}
+
+.div-link a{
+  color: black;
+
+}
+.div-link-600px img{
+  width: 60%;
+  margin:3% auto;
+}
+
+.div-link-left{
+  position: relative;
+  left: 70%;
+  height: 2.5em;
+}
+
+nav ul{
+  display: flex;
+
+}
+
+/* Header */
+  
+.header{
+  background: rgba(4, 25, 44, 1.0) ;
+}
+
+.header .wrapper-contain{
+  margin-top: 7vh;
+  position: relative;
+}
+
+.header .wrapper-contain p{
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+  padding: 0 1em;
+  font-size: 1.5em;
+  color: rgba(251, 254, 254,1);
 }
 
-section{
-  margin-top: 3rem;
+.wraper-button{
+  width: 80%;
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.cursos div{
-  background-color: black;
+.ancla{
+  background-color: rgba(86, 70, 166, 1);
+  padding: .5em;
+  border: none;
+  width: 80%;
+  margin-top: .7em;
+}
+
+.header .ancla:last-child{
+    background-color: rgba(255, 235, 14, 1);
+}
+
+.header .ancla.last-child:hover{
+  background-color: rgba(255, 235, 14, .6);
+}
+
+.header .ancla:hover,.header .ancla:active{
+  background-color: rgba(86, 70, 166, .5);
+  border-bottom: 2px solid orange;
+}
+
+.ancla a{
+  font-size: 1.2em;
+  color: black;
+}
+
+.header .ancla:hover a{
   color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
 }
 
-ol li{
-  text-align: left;
+@media screen and (min-width: 480px){
+  nav .div-link{
+    display: block;
+    width: 20%;
+  }
+
+  nav .div-link:hover{
+    background-color: rgba(1, 155, 217, .5);
+  }
+
+  nav .div-link:hover a{
+    color: white;
+    
+  }
+
+  .div-link-left{
+    position: relative;
+    left: 43%;
+  }
+  .div-link-600px{
+    display: none;
+  }
+
+  .cody-wrapper{
+    width: 10%;
+  }
+
+  .header .wrapper-contain{
+    margin-top: 20vh;
+  }
+
+  .header .wraper-button{
+    margin: 3em auto 0;
+  }
+
+  .ancla{
+    width: 45%;
+  }
 }
+
+
+@media screen and (min-width: 700px){
+  .header .ancla{
+    width: 22%;
+    margin-top: 5vh;
+  }
+}
+
+
+/* Vacaiones */
+.cursos div{
+  width: 100%;
+  height: 10%;
+  display: inline-block;
+  line-height: 2.7;
+  margin: .5rem auto;
+  padding: .5rem;
+  box-shadow: 5px 5px 10px black;
+  color: white;
+  background-color: black;
+}
+.cursos div p{
+  text-align: center;
+  padding: 0;
+  font-size: 1em;
+}
+
+.circle{
+  width: 35vh;
+  height: 35vh;
+  position: absolute;
+  top: 113vh;
+  left: 52vw;
+  border-radius: 50%;
+  background-color:#FFEB0E;
+  z-index: -1;
+
+}
+
+.wrapper-contain p{
+  font-size: 1.5em;
+  padding: .5em 1em;
+}
+
+/* ruta aprendizaje */
+
+/* Colabora */
+
+/* img vacaiones */
+
+/* Descanso */
+
+/* Media Query */
+
