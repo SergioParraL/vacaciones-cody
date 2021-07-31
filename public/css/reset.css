@@ -16,7 +16,7 @@
 .header,.wrapper-section{
   text-align: center;
   scroll-snap-align: start;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 img{
