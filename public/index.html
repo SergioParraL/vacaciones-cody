@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
   <main class="container-Prin">
@@ -25,7 +28,7 @@
         <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
       </article>
       <article class="wraper-button">
-        <button class="ancla  BR-0"><a href="#">Vacaciones</a></button>
+        <button class="ancla  BR-0"><a href="#Vacaciones">Vacaciones</a></button>
         <button class="ancla  BR-1"><a href="#">Ruta</a></button>
         <button class="ancla  BR-0"><a href="#">Colaborar</a></button>
         <button class="ancla  BR-1"><a href="#">Fotos</a></button>
@@ -35,13 +38,16 @@
 
     <section class="wrapper-section">
       <header>
-        <h2>Mis vacaciones Frontend</h2>
+        <h2 id="Vacaciones">Mis vacaciones Frontend</h2>
       </header>
+      <!-- 162, 121, 237 -->
       <div class="circle"></div>
-      <article class="wrapper-contain">
-        <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-        <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-        <p> Estos son los cursos que estuve tomando </p>
+      <article class="wrapper-contain wrapper-Flex">
+        <div class="text-cursos">
+          <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+          <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+          <p> Estos son los cursos que estuve tomando: </p>
+        </div>
         <div class="cursos">
           <div>
             <p><a href="#">Curso profesional de Desarrollo Web</a></p>

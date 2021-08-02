@@ -1,126 +1,131 @@
 /* Nav */
 
-nav{
-  width: 100%;
-  height: 5rem;
-  padding: 1rem;
-  display: flex;
-  gap:1em;
-  background-color: rgb(86, 70, 166);
-}
+  nav{
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+    gap:1em;
+    background-color: rgb(86, 70, 166);
+  }
 
-.cody-wrapper{
-  width: 12%;
-  height: 3.5em;
-}
+  .cody-wrapper{
+    width: 12%;
+    height: 3.5em;
+  }
 
-.cody-wrapper:first-child{
-  background: url('../images/cody.png') no-repeat;
-  background-position: center;
-  background-size: 3em;
-}
+  .cody-wrapper:first-child{
+    background: url('../images/cody.png') no-repeat;
+    background-position: center;
+    background-size: 3em;
+  }
 
-.cody-wrapper:last-child{
-  background: url('../images/ellipsis-horizontal-circle-outline.svg') no-repeat;
-  background-position: center;
-  background-size: 2em;
-}
+  .cody-wrapper:last-child{
+    background: url('../images/ellipsis-horizontal-circle-outline.svg') no-repeat;
+    background-position: center;
+    background-size: 2em;
+  }
 
-.div-link {
-  display: none;
-  list-style-type: none;
-  padding-top: .5em;
-  background-color: rgb(1, 155, 217);
-}
+  .div-link {
+    display: none;
+    list-style-type: none;
+    padding-top: .5em;
+    background-color: rgb(1, 155, 217);
+  }
 
-.div-link a{
-  color: black;
+  .div-link a{
+    color: black;
 
-}
-.div-link-600px img{
-  width: 60%;
-  margin:3% auto;
-}
+  }
+  .div-link-600px img{
+    width: 60%;
+    margin:3% auto;
+  }
 
-.div-link-left{
-  position: relative;
-  left: 70%;
-  height: 2.5em;
-}
+  .div-link-left{
+    position: relative;
+    left: 70%;
+    height: 2.5em;
+  }
 
-nav ul{
-  display: flex;
+  nav ul{
+    display: flex;
 
-}
+  }
 
 /* Header */
   
-.header{
-  background: rgba(4, 25, 44, 1.0) ;
-}
+  .header{
+    background: rgba(4, 25, 44, 1.0) ;
+  }
 
-.header .wrapper-contain{
-  margin-top: 3vh;
-  position: relative;
-}
+  .header .wrapper-contain{
+    margin-top: 3vh;
+    position: relative;
+  }
 
-.header .wrapper-contain p{
-  text-align: center;
-  padding: 0 1em;
-  font-size: 1.5em;
-  color: rgba(251, 254, 254,1);
-}
+  .header .wrapper-contain p{
+    text-align: center;
+    padding: 0 1em;
+    font-size: 1.5em;
+    color: rgba(251, 254, 254, .7);
+  }
 
-.wraper-button{
-  width: 80%;
-  margin: 1em auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+  .wraper-button{
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-.ancla{
-  background-color: rgba(86, 70, 166, 1);
-  padding: .5em;
-  border: none;
-  width: 80%;
-  margin-top: .7em;
-}
+  .ancla{
+    background-color: rgba(86, 70, 166, 1);
+    padding: .5em;
+    border: none;
+    width: 80%;
+    margin-top: .7em;
+  }
 
-.header .ancla:last-child{
-    background-color: rgba(255, 235, 14, 1);
-}
+  .header .ancla:last-child{
+      background-color: rgba(255, 235, 14, 1);
+  }
 
-.header .ancla.last-child:hover{
-  background-color: rgba(255, 235, 14, .6);
-}
+  .header .ancla.last-child:hover{
+    background-color: rgba(255, 235, 14, .6);
+  }
 
-.header .ancla:hover,.header .ancla:active{
-  background-color: rgba(86, 70, 166, .5);
-  border-bottom: 2px solid orange;
-}
+  .header .ancla:hover,.header .ancla:active{
+    background-color: rgba(86, 70, 166, .5);
+    border-bottom: 2px solid orange;
+  }
 
-.ancla a{
-  font-size: 1.2em;
-  color: black;
-}
+  .ancla a{
+    font-size: 1.2em;
+    color: black;
+  }
 
-.header .ancla:hover a{
-  color: white;
-}
+  .header .ancla:hover a{
+    color: white;
+  }
 
 /* Vacaiones */
 .cursos div{
-  width: 100%;
+  width: 95%;
   height: 10%;
   display: inline-block;
   line-height: 2.7;
   margin: .5rem auto;
   padding: .5rem;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px rgb(86, 70, 166);
   color: white;
-  background-color: black;
+  background-color: rgba(86, 70, 166, .9);
 }
+
+.cursos div:hover, .cursos div:active {
+    background-color: rgb(45, 48, 105);
+}
+
 .cursos div p{
   text-align: center;
   padding: 0;
@@ -131,15 +136,15 @@ nav ul{
   width: 35vh;
   height: 35vh;
   position: absolute;
-  top: 113vh;
-  left: 52vw;
+  top: 125vh;
+  left: 30vw;
   border-radius: 50%;
-  background-color:#FFEB0E;
+  background-color: rgb(255, 235, 14);
   z-index: -1;
-
+  box-shadow: -2px 0px 15px 10px rgb(199, 185, 0);
 }
 
-.wrapper-contain p{
+.text-cursos p{
   font-size: 1.5em;
   padding: .5em 1em;
 }
@@ -192,8 +197,18 @@ nav ul{
   .ancla{
     width: 45%;
   }
-}
 
+
+  .circle{
+    top: 130vh;
+    left: 50vw;
+  }
+
+  .cursos{
+    margin-top: 20vh;
+  }
+
+}
 
 @media screen and (min-width: 700px){
   .header .ancla{
@@ -203,13 +218,55 @@ nav ul{
 
   .header .wrapper-contain{
     margin-top: 18vh; 
-    /* background-color: red; */
+  }
+
+  .wrapper-Flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .text-cursos{
+    padding: .5em 0;
+  }
+  .text-cursos, .cursos{
+    width: 45%;
+  }
+  .cursos div{
+    height: 12%; 
+    width: 100%;
+  }
+  .cursos{
+    margin-top: 40vh;
+    height: 1%; 
+  }
+  .circle{
+    width: 50vh;
+    height: 50vh;
+    top: 160vh;
+    left: 35vw;
+  }
+  .text-cursos p:last-child{
+    width: 45%;
+    max-width: 20em;
+    position: absolute;
+    top: 145vh;
+    left: 51vw;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 1);
   }
 }
+
+@media screen and (min-width: 900px){
+  .text-cursos{
+    margin-top: 6vh;
+  }
 
 @media screen and (min-height: 900px){
   .header .wrapper-contain{
     margin-top: 30vh; 
-    /* background-color: red; */
   }
 }
