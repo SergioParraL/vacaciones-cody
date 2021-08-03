@@ -2,16 +2,25 @@ article.wrapper-contain{
 	padding: .5em;	
 }
 
+.wrapper-section:nth-child(3),.wrapper-section:nth-child(5){
+  background-color: rgba(4, 25, 44,.9);
+  color: white;
+}
+
 /* Tipografia */
 
 h1{
   font-size: 2.7em;
   padding: .5em;
   color: rgba(0, 246, 87, 1.0);
+  font-family: Montserrat;
 }
 h2{
   font-size: 2em;
-  padding: 2rem 0 1rem 0 ;
+  font-weight: 700;
+  font-family: Montserrat;
+  font-variant: small-caps;
+  padding: 2rem 1rem;
 }
 p{
   font-size: 1em;
@@ -34,4 +43,145 @@ a{
 
 ol li{
   text-align: left;
+}
+
+
+/* Media Query */
+
+@media screen and (min-width: 480px){
+	/* nav */  
+	  nav .div-link{
+	    display: block;
+	    width: 20%;
+	  }
+
+	  nav .div-link:hover{
+	    background-color: rgba(1, 155, 217, .5);
+	  }
+
+	  nav .div-link:hover a{
+	    color: white;
+	    
+	  }
+
+	  .div-link-left{
+	    position: relative;
+	    left: 43%;
+	  }
+	  .div-link-600px{
+	    display: none;
+	  }
+
+	  .cody-wrapper{
+	    width: 10%;
+	  }
+
+	  .header .wrapper-contain{
+	    margin-top: 10vh;
+	  }
+
+	  .header .wraper-button{
+	    margin: 3em auto 0;
+	  }
+
+	  .ancla{
+	    width: 45%;
+	  }
+
+	/* vacaciones */
+	  .circle{
+	    top: 130vh;
+	    left: 50vw;
+	  }
+
+	  .cursos{
+	    margin-top: 20vh;
+	  }
+
+	/* Ruta */
+	.Route-img{
+	  height: 75vh;
+	}
+}
+
+@media screen and (min-width: 700px){
+	/* Header  */
+	  .header .ancla{
+	    width: 22%;
+	    margin-top: 5vh;
+	  }
+
+	  .header .wrapper-contain{
+	    margin-top: 18vh; 
+	  }
+
+	/* Vacaciones */
+	  .wrapper-Flex{
+	    width: 100%;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-evenly;
+	  }
+
+	  .text-cursos{
+	    padding: .5em 0;
+	  }
+	  .text-cursos, .cursos{
+	    width: 45%;
+	  }
+	  .cursos div{
+	    height: 12%; 
+	    width: 100%;
+	  }
+	  .cursos{
+	    margin-top: 40vh;
+	    height: 1%; 
+	  }
+	  .circle{
+	    width: 50vh;
+	    height: 50vh;
+	    top: 160vh;
+	    left: 35vw;
+	  }
+	  .text-cursos p:last-child{
+	    width: 45%;
+	    max-width: 20em;
+	    position: absolute;
+	    top: 145vh;
+	    left: 51vw;
+	    font-weight: bold;
+	    text-align: center;
+	    font-size: 1.5em;
+	    color: rgba(0, 0, 0, 1);
+	  }
+
+	/* Rutas */
+
+	.wrapper-section:nth-child(3){
+		/* width: 90%; */
+  		display: flex;
+  		justify-content: space-evenly;
+	}
+	.wrapper-section:nth-child(3) p{
+		padding: 0;
+	}
+	.route-section{
+		width: 45%;
+		margin: auto;
+	}
+	.wrapper-section:nth-child(3) .Route-img img{
+		margin-top: 15vh;
+	}
+}
+
+@media screen and (min-width: 900px){
+  .text-cursos{
+    margin-top: 6vh;
+  }
+}
+
+@media screen and (min-height: 900px){
+  .header .wrapper-contain{
+    margin-top: 30vh; 
+  }
 }
