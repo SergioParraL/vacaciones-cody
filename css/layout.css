@@ -7,43 +7,52 @@ article.wrapper-contain{
   color: white;
 }
 
+.circle{
+    width: 35vh;
+    height: 35vh;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 235, 14);
+    z-index: -1;
+    box-shadow: -2px 0px 15px 10px rgb(199, 185, 0);
+  }
 /* Tipografia */
 
-h1{
-  font-size: 2.7em;
-  padding: .5em;
-  color: rgba(0, 246, 87, 1.0);
-  font-family: Montserrat;
-}
-h2{
-  font-size: 2em;
-  font-weight: 700;
-  font-family: Montserrat;
-  font-variant: small-caps;
-  padding: 2rem 1rem;
-}
-p{
-  font-size: 1em;
-  text-align: left;
-  color: rgba(0, 0, 0, .7);
+	h1{
+	  font-size: 2.7em;
+	  padding: .5em;
+	  color: rgba(0, 246, 87, 1.0);
+	  font-family: Montserrat;
+	}
+	h2,.link-colabora{
+	  font-size: 2em;
+	  font-weight: 700;
+	  font-family: Montserrat;
+	  font-variant: small-caps;
+	  padding: 2rem 1rem;
+	}
+	p{
+	  font-size: 1.5em;
+	  text-align: left;
+	  color: rgba(0, 0, 0, .7);
 
-}
+	}
 
-a{
-	color: white;
-	text-decoration: none;
-}
+	a{
+		color: white;
+		text-decoration: none;
+	}
 
-.ul-aprendizaje li{
-  text-align: left;
-}
-.ul-aprendizaje li::marker {
-  content: "🚀";
-}
+	.ul-aprendizaje li{
+	  text-align: left;
+	}
+	.ul-aprendizaje li::marker {
+	  content: "🚀";
+	}
 
-ol li{
-  text-align: left;
-}
+	ol li{
+	  text-align: left;
+	}
 
 
 /* Media Query */
@@ -89,7 +98,7 @@ ol li{
 	  }
 
 	/* vacaciones */
-	  .circle{
+	  .circle-Vacaciones{
 	    top: 130vh;
 	    left: 50vw;
 	  }
@@ -101,6 +110,17 @@ ol li{
 	/* Ruta */
 	.Route-img{
 	  height: 75vh;
+	}
+
+	/* Colaborara */
+	.wrapper-section:nth-child(4) .circle-Colabora{
+		width: 60vh;
+		height: 60vh;
+		top: 375vh;
+		left: 22vw;
+	}
+	.colabora-button{
+		width: 65%;
 	}
 }
 
@@ -137,7 +157,7 @@ ol li{
 	    margin-top: 40vh;
 	    height: 1%; 
 	  }
-	  .circle{
+	  .circle-Vacaciones{
 	    width: 50vh;
 	    height: 50vh;
 	    top: 160vh;
@@ -157,27 +177,60 @@ ol li{
 
 	/* Rutas */
 
-	.wrapper-section:nth-child(3){
-		/* width: 90%; */
-  		display: flex;
-  		justify-content: space-evenly;
-	}
-	.wrapper-section:nth-child(3) p{
-		padding: 0;
-	}
-	.route-section{
+		.wrapper-section:nth-child(3){
+			/* width: 90%; */
+	  		display: flex;
+	  		justify-content: space-evenly;
+		}
+		.wrapper-section:nth-child(3) p{
+			padding: 0;
+		}
+		.route-section{
+			width: 45%;
+			margin: auto;
+		}
+		.wrapper-section:nth-child(3) .Route-img img{
+			margin-top: 15vh;
+		}
+
+	/* Colaborara */
+		.wrapper-section:nth-child(4) .circle-Colabora{
+			width: 90vh;
+			height: 90vh;
+			top: 320vh;
+			left: 17vw;
+			
+		}
+		.wrapper-section:nth-child(4) .wrapper-contain p{
+			width: 70%;
+	 		border-right: 3px solid rgb(29, 48, 65);
+
+		}
+		.wrapper-section:nth-child(4) .wrapper-contain p:nth-child(3){
+			text-align: right;
+			position: relative;
+			left: 26%;
+	 		border-right: none;
+	 		border-left: 3px solid rgb(29, 48, 65);
+
+		}
+		.colabora-button{
 		width: 45%;
-		margin: auto;
-	}
-	.wrapper-section:nth-child(3) .Route-img img{
-		margin-top: 15vh;
-	}
+		}
 }
 
 @media screen and (min-width: 900px){
   .text-cursos{
     margin-top: 6vh;
   }
+  .wrapper-section:nth-child(4) .circle-Colabora{
+	left: 35vw;
+  }
+
+   .colabora-button{
+    margin-top: 20vh;
+  }
+
 }
 
 @media screen and (min-height: 900px){
