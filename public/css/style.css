@@ -191,9 +191,53 @@
     margin-top: 10vh;
   }
 
-
-
 /* img vacaiones */
 
-/* Descanso */
+.wrapper-section:nth-child(5){
+  height: 150vh;
+  padding-bottom: 3em;
+}
 
+
+.wrapper-section:nth-child(5) .wrapper-contain{
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  border: 2px solid orange;
+  position: relative;
+  padding: 0;
+
+}
+
+.img-galery img{
+  opacity: 0;
+}
+.img-galery{
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.img-galery:nth-child(1){
+  background-color: yellow;
+  top: 0%;
+}
+.img-galery:nth-child(2){
+  background-color: blue;
+  top: 34%;
+}
+
+.img-galery:nth-child(3){
+  background-color: red;
+  top: 39%;
+
+}
+.img-galery:nth-child(4){
+  /* height: 15.5em; */
+  top: 44%;
+  background-color: rgb(29, 48, 65);
+  border: 2px solid green;
+}
+
+
+/* Descanso */
