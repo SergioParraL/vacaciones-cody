@@ -57,184 +57,184 @@ article.wrapper-contain{
 
 /* Media Query */
 
-@media screen and (min-width: 480px){
-	/* nav */  
-	  nav .div-link{
-	    display: block;
-	    width: 20%;
+	@media screen and (min-width: 480px){
+		/* nav */  
+		  nav .div-link{
+		    display: block;
+		    width: 20%;
+		  }
+
+		  nav .div-link:hover{
+		    background-color: rgba(1, 155, 217, .5);
+		  }
+
+		  nav .div-link:hover a{
+		    color: white;
+		    
+		  }
+
+		  .div-link-left{
+		    position: relative;
+		    left: 43%;
+		  }
+		  .div-link-600px{
+		    display: none;
+		  }
+
+		  .cody-wrapper{
+		    width: 10%;
+		  }
+
+		  .header .wrapper-contain{
+		    margin-top: 10vh;
+		  }
+
+		  .header .wraper-button{
+		    margin: 3em auto 0;
+		  }
+
+		  .ancla{
+		    width: 45%;
+		  }
+
+		/* vacaciones */
+		  .circle-Vacaciones{
+		    top: 130vh;
+		    left: 50vw;
+		  }
+
+		  .cursos{
+		    margin-top: 20vh;
+		  }
+
+		/* Ruta */
+		.Route-img{
+		  height: 75vh;
+		}
+
+		/* Colaborara */
+		.wrapper-section:nth-child(4) .circle-Colabora{
+			width: 60vh;
+			height: 60vh;
+			top: 375vh;
+			left: 22vw;
+		}
+		.colabora-button{
+			width: 65%;
+		}
+	}
+
+	@media screen and (min-width: 700px){
+		/* Header  */
+		  .header .ancla{
+		    width: 22%;
+		    margin-top: 5vh;
+		  }
+
+		  .header .wrapper-contain{
+		    margin-top: 18vh; 
+		  }
+
+		/* Vacaciones */
+		  .wrapper-Flex{
+		    width: 100%;
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-evenly;
+		  }
+
+		  .text-cursos{
+		    padding: .5em 0;
+		  }
+		  .text-cursos, .cursos{
+		    width: 45%;
+		  }
+		  .cursos div{
+		    height: 12%; 
+		    width: 100%;
+		  }
+		  .cursos{
+		    margin-top: 40vh;
+		    height: 1%; 
+		  }
+		  .circle-Vacaciones{
+		    width: 50vh;
+		    height: 50vh;
+		    top: 160vh;
+		    left: 35vw;
+		  }
+		  .text-cursos p:last-child{
+		    width: 45%;
+		    max-width: 20em;
+		    position: absolute;
+		    top: 145vh;
+		    left: 51vw;
+		    font-weight: bold;
+		    text-align: center;
+		    font-size: 1.5em;
+		    color: rgba(0, 0, 0, 1);
+		  }
+
+		/* Rutas */
+
+			.wrapper-section:nth-child(3){
+				/* width: 90%; */
+		  		display: flex;
+		  		justify-content: space-evenly;
+			}
+			.wrapper-section:nth-child(3) p{
+				padding: 0;
+			}
+			.route-section{
+				width: 45%;
+				margin: auto;
+			}
+			.wrapper-section:nth-child(3) .Route-img img{
+				margin-top: 15vh;
+			}
+
+		/* Colaborara */
+			.wrapper-section:nth-child(4) .circle-Colabora{
+				width: 90vh;
+				height: 90vh;
+				top: 320vh;
+				left: 17vw;
+				
+			}
+			.wrapper-section:nth-child(4) .wrapper-contain p{
+				width: 70%;
+		 		border-right: 3px solid rgb(29, 48, 65);
+
+			}
+			.wrapper-section:nth-child(4) .wrapper-contain p:nth-child(3){
+				text-align: right;
+				position: relative;
+				left: 26%;
+		 		border-right: none;
+		 		border-left: 3px solid rgb(29, 48, 65);
+
+			}
+			.colabora-button{
+			width: 45%;
+			}
+	}
+
+	@media screen and (min-width: 900px){
+	  .text-cursos{
+	    margin-top: 6vh;
+	  }
+	  .wrapper-section:nth-child(4) .circle-Colabora{
+		left: 35vw;
 	  }
 
-	  nav .div-link:hover{
-	    background-color: rgba(1, 155, 217, .5);
-	  }
-
-	  nav .div-link:hover a{
-	    color: white;
-	    
-	  }
-
-	  .div-link-left{
-	    position: relative;
-	    left: 43%;
-	  }
-	  .div-link-600px{
-	    display: none;
-	  }
-
-	  .cody-wrapper{
-	    width: 10%;
-	  }
-
-	  .header .wrapper-contain{
-	    margin-top: 10vh;
-	  }
-
-	  .header .wraper-button{
-	    margin: 3em auto 0;
-	  }
-
-	  .ancla{
-	    width: 45%;
-	  }
-
-	/* vacaciones */
-	  .circle-Vacaciones{
-	    top: 130vh;
-	    left: 50vw;
-	  }
-
-	  .cursos{
+	   .colabora-button{
 	    margin-top: 20vh;
 	  }
 
-	/* Ruta */
-	.Route-img{
-	  height: 75vh;
 	}
 
-	/* Colaborara */
-	.wrapper-section:nth-child(4) .circle-Colabora{
-		width: 60vh;
-		height: 60vh;
-		top: 375vh;
-		left: 22vw;
-	}
-	.colabora-button{
-		width: 65%;
-	}
-}
-
-@media screen and (min-width: 700px){
-	/* Header  */
-	  .header .ancla{
-	    width: 22%;
-	    margin-top: 5vh;
-	  }
-
+	@media screen and (min-height: 900px){
 	  .header .wrapper-contain{
-	    margin-top: 18vh; 
+	    margin-top: 30vh; 
 	  }
-
-	/* Vacaciones */
-	  .wrapper-Flex{
-	    width: 100%;
-	    display: flex;
-	    flex-wrap: wrap;
-	    justify-content: space-evenly;
-	  }
-
-	  .text-cursos{
-	    padding: .5em 0;
-	  }
-	  .text-cursos, .cursos{
-	    width: 45%;
-	  }
-	  .cursos div{
-	    height: 12%; 
-	    width: 100%;
-	  }
-	  .cursos{
-	    margin-top: 40vh;
-	    height: 1%; 
-	  }
-	  .circle-Vacaciones{
-	    width: 50vh;
-	    height: 50vh;
-	    top: 160vh;
-	    left: 35vw;
-	  }
-	  .text-cursos p:last-child{
-	    width: 45%;
-	    max-width: 20em;
-	    position: absolute;
-	    top: 145vh;
-	    left: 51vw;
-	    font-weight: bold;
-	    text-align: center;
-	    font-size: 1.5em;
-	    color: rgba(0, 0, 0, 1);
-	  }
-
-	/* Rutas */
-
-		.wrapper-section:nth-child(3){
-			/* width: 90%; */
-	  		display: flex;
-	  		justify-content: space-evenly;
-		}
-		.wrapper-section:nth-child(3) p{
-			padding: 0;
-		}
-		.route-section{
-			width: 45%;
-			margin: auto;
-		}
-		.wrapper-section:nth-child(3) .Route-img img{
-			margin-top: 15vh;
-		}
-
-	/* Colaborara */
-		.wrapper-section:nth-child(4) .circle-Colabora{
-			width: 90vh;
-			height: 90vh;
-			top: 320vh;
-			left: 17vw;
-			
-		}
-		.wrapper-section:nth-child(4) .wrapper-contain p{
-			width: 70%;
-	 		border-right: 3px solid rgb(29, 48, 65);
-
-		}
-		.wrapper-section:nth-child(4) .wrapper-contain p:nth-child(3){
-			text-align: right;
-			position: relative;
-			left: 26%;
-	 		border-right: none;
-	 		border-left: 3px solid rgb(29, 48, 65);
-
-		}
-		.colabora-button{
-		width: 45%;
-		}
-}
-
-@media screen and (min-width: 900px){
-  .text-cursos{
-    margin-top: 6vh;
-  }
-  .wrapper-section:nth-child(4) .circle-Colabora{
-	left: 35vw;
-  }
-
-   .colabora-button{
-    margin-top: 20vh;
-  }
-
-}
-
-@media screen and (min-height: 900px){
-  .header .wrapper-contain{
-    margin-top: 30vh; 
-  }
-}
+	}
