@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="css/layout.css">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
-
 </head>
 <body>
   <main class="container-Prin">
@@ -113,26 +112,29 @@
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
-      <article class="wrapper-contain">
+      <article id="img-galery-id" class="wrapper-contain">
           <article>
             <article class="img-galery">
+              <div id="img01" class="up-content"></div>
               <img src="images/1.jpg" alt="Cody en la playa">
             </article>
             <article class="img-galery">
+              <div id="img02" class="up-content"></div>
               <img src="images/2.jpg" alt="Cody acampando">
             </article>
             <article class="img-galery">
+              <div id="img03" class="up-content"></div>
               <img src="images/3.jpg" alt="Cody en una alberca">
             </article>
             <article class="img-galery">
-              <img src="images/3.jpg" alt="Cody en una alberca">
+              <!-- <img src="images/3.jpg" alt="Cody en una alberca"> -->
+              <p>
+                Puedes ver más, en la galería de fotos de mi página <br> 
+                <a href="fotos.html">Ir a la galería</a>
+              </p>
             </article>
           </article>
       </article>
-              <p>
-            Puedes ver más, en la galería de fotos de mi página
-            <a href="fotos.html">Ir a la galería</a>
-          </p>
     </section><!-- fotos -->
 
     <section class="wrapper-section">
@@ -152,5 +154,15 @@
       </article>
     </section><!-- Importancia -->
   </main>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript">
+    // let d = 
+
+    let up = document.querySelectorAll('.up-content')
+
+    for (var i = 0; i < up.length; i++) {
+      up[i].addEventListener('click',Galery)
+    }
+  </script>
 </body>
 </html>

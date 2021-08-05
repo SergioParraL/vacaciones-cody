@@ -108,22 +108,32 @@ article.wrapper-contain{
 		  }
 
 		/* Ruta */
-		.Route-img{
-		  height: 75vh;
-		}
+			.Route-img{
+			  height: 75vh;
+			}
 
 		/* Colaborara */
-		.wrapper-section:nth-child(4) .circle-Colabora{
-			width: 60vh;
-			height: 60vh;
-			top: 375vh;
-			left: 22vw;
-		}
-		.colabora-button{
-			width: 65%;
-		}
-	}
+			.wrapper-section:nth-child(4) .circle-Colabora{
+				width: 60vh;
+				height: 60vh;
+				top: 375vh;
+				left: 22vw;
+			}
+			.colabora-button{
+				width: 65%;
+			}
 
+		/* Vacaciones */
+			.wrapper-contain .img01{
+				top: -11%;
+			}
+			.wrapper-contain .img02{
+			    top: -5%;
+			}
+			.wrapper-contain .img03{
+		    	top: 1%;
+	  		}
+	}
 	@media screen and (min-width: 700px){
 		/* Header  */
 		  .header .ancla{
@@ -217,6 +227,25 @@ article.wrapper-contain{
 			.colabora-button{
 			width: 45%;
 			}
+
+			/* Vacaiones */
+
+  			.wrapper-section:nth-child(5) .wrapper-contain{
+  				width: 50%;
+  			}
+  			.wrapper-contain .img01{
+			    top: -8%;
+			}
+			.wrapper-contain .img02{
+			    top: -2%;
+			}
+			.wrapper-contain .img03{
+				top: 4%;
+			}
+  			.img-galery img{
+				max-width: 70%;
+				max-height: 15em;
+			}
 	}
 
 	@media screen and (min-width: 900px){
@@ -230,7 +259,20 @@ article.wrapper-contain{
 	   .colabora-button{
 	    margin-top: 20vh;
 	  }
+	  /* Vacaciones */
 
+	  	.wrapper-contain .img01{
+		    top: -18%;
+		}
+		.wrapper-contain .img02{
+		    top: -12%;
+		}
+		.wrapper-contain .img03{
+			top: -5%;
+		}
+		.img-galery:nth-child(4){
+			height: 20.5em;
+		}
 	}
 
 	@media screen and (min-height: 900px){
