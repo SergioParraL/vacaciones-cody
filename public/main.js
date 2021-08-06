@@ -5,24 +5,10 @@ function Galery () {
 	actionArrow(p,parent)
 }
 
-function closeCard () {
-	let arr = []
-
-    let card = document.querySelectorAll('.img-galery')
-    let m = 1
-	for (var i = 0; i < card.length; i++) {
-
-		if (card[i].getAttribute('class').substring(11) != 'img0' + m) {
-		arr.push(i)
-		}
-		m++
-	}
-	return arr
-}
 function actionArrow(id,parent) {
 	const coord = ['img01','img02','img03']
-    let galery = document.getElementById('img-galery-id')
-	let position, close = closeCard()
+    const galery = document.getElementById('img-galery-id')
+	let position
 
 	for (var i = 0; i < coord[0].length; i++) {
 		if (coord[i] == id) {

@@ -58,6 +58,10 @@ article.wrapper-contain{
 /* Media Query */
 
 	@media screen and (min-width: 480px){
+		li .img-corousel{
+			width: 88%;
+			margin: 1.5em;
+		}
 		/* nav */  
 		  nav .div-link{
 		    display: block;
@@ -73,7 +77,7 @@ article.wrapper-contain{
 		    
 		  }
 
-		  .div-link-left{
+		  div.div-link-left{
 		    position: relative;
 		    left: 43%;
 		  }
@@ -83,10 +87,6 @@ article.wrapper-contain{
 
 		  .cody-wrapper{
 		    width: 10%;
-		  }
-
-		  .header .wrapper-contain{
-		    margin-top: 10vh;
 		  }
 
 		  .header .wraper-button{
@@ -139,16 +139,17 @@ article.wrapper-contain{
 		}
 	}
 	@media screen and (min-width: 700px){
+		li .img-corousel{
+			width: 91%;
+			margin: 1.5em;
+		}
+
 		/* Header  */
 		  .header .ancla{
 		    width: 22%;
 		    margin-top: 5vh;
 		  }
-
-		  .header .wrapper-contain{
-		    margin-top: 18vh; 
-		  }
-
+		
 		/* Vacaciones */
 		  .wrapper-Flex{
 		    width: 100%;
@@ -264,6 +265,18 @@ article.wrapper-contain{
 	}
 
 	@media screen and (min-width: 900px){
+		li .img-corousel{
+			width: 91%;
+			margin: 1.5em;
+		}
+
+		nav .div-link{
+		    display: block;
+		    width: 15%;
+		  }
+		  .div-link-left{
+		    left: 54%;
+		  }
 	  .text-cursos{
 	    margin-top: 6vh;
 	  }
