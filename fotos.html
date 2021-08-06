@@ -6,28 +6,116 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/images.css">
 </head>
 
 <body>
-  <main>
-    <header>
+  <main class="container-Prin">
+    <header class="header">
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+          <div class="cody-wrapper">
+          </div>
+            <div class="cody-wrapper  div-link  div-link-left">
+              <a href="#headerAnchor">Inicio</a>
+            </div>
+            <div class="cody-wrapper  div-link  div-link-left">
+              <a href="fotos.html">Fotos</a>
+            </div>
+            <div class="cody-wrapper  div-link-600px  div-link-left">
+          </div>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <img class='img-corousel' src="images/1.jpg" alt="Cody en la playa">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide6"
+               class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2"
+               class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <img class='img-corousel' src="images/2.jpg" alt="Cody acampando">
 
+          <div class="carousel__snapper">
+            <a href="#carousel__slide1"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3"
+               class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <img class='img-corousel' src="images/3.jpg" alt="Cody en una alberca">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide2"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4"
+               class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+          <img class='img-corousel' src="images/4.jpg" alt="Cody en una alberca">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide3"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide5"
+               class="carousel__next">Go to first slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+          <img class='img-corousel' src="images/5.jpg" alt="Cody en una alberca">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide6"
+               class="carousel__next">Go to first slide</a>
+          </div>
+          <li id="carousel__slide6" tabindex="0" class="carousel__slide">
+          <img class='img-corousel' src="images/6.jpg" alt="Cody en una alberca">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide5"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1"
+               class="carousel__next">Go to first slide</a>
+          </div>
+        </li>
+      </ol>
+
+
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1"
+               class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2"
+               class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3"
+               class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4"
+               class="carousel__navigation-button">Go to slide 4</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide5"
+               class="carousel__navigation-button">Go to slide 5</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide6"
+               class="carousel__navigation-button">Go to slide 5</a>
+          </li>
+        </ol>
+      </aside>
+    </section>
   </main>
 </body>
 
