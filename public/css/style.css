@@ -117,7 +117,7 @@
     line-height: 2.7;
     margin: .5rem auto;
     padding: .5rem;
-    box-shadow: 5px 5px 10px rgb(86, 70, 166);
+    box-shadow: -10px 6px 12px 2px rgb(38, 39, 125);
     color: white;
     background-color: rgba(86, 70, 166, .9);
   }
@@ -280,5 +280,28 @@
     transform: rotate(180deg);
   }
 
-
 /* Descanso */
+
+.wrapper-section:nth-child(6) .wrapper-contain p{
+  margin: .5em 1.5em;
+}
+
+.wrapper-Des{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cont-Des{
+  width: 100%;
+  padding: .7em .4em;
+  margin-top: 1em;
+  color: black;
+  font-size: 1.2em;
+  /* 29, 48, 65 */
+  background-color: rgba(248, 179, 8,.9);
+  /* background: linear-gradient(to right, rgba(239, 182, 65),rgba(239, 182, 65,.7));   */
+  box-shadow: -10px 6px 12px 2px rgb(82, 52, 0); 
+}
